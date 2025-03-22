@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF4D5;
+}
+
+h1,.heading {
+    font-family: 'Playfair Display', serif;
+}
+
+
+.navbar.navbar-expand-lg {
+    padding: 20px 0px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-weight: 500;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #197b2d;
+    border-color: #197b2d;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 15px 30px;
+    transition: all .3s ease-in;
+}
+
+.btn-primary:hover {
+    background-color:#fdc415;
+    border-color:#fdc415;
+    color: #011a06;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    transform: scale(1.01);
+}
+
+#hero_section {
+    padding: 100px 0;
+}
+
+
+#hero_section .yellow-card {
+    background-color: #fdc415;
+    background: url('../img/hero-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    border-radius: 20px;
+    padding: 10px 70px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+
+#hero_section .hero-img {
+    margin-top: -90px;
+}
+
+.play-btn img {
+    width: 200px;
+}
+
+.sub-title {
+    font-size: 18px;
+}
+
+.cta-btn {
+    position: fixed;
+    background-color: green;
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    transition: all .2s ease-in;
+}
+
+.cta-btn i {
+    color: #ffffff;
+}
+
+.cta-btn:hover {
+    transform: scale(1.1);
+}
+
+.cta-btn.call {
+    bottom: 140px;
+    font-size: 24px;
+}
+
+.cta-btn.whatsapp {
+    bottom: 80px;
+    font-size: 30px;
+}
+
+
+#sell_your_scrap {
+    padding: 100px 0;
+    background-color: #FEEDB7;
+}
+
+#sell_your_scrap h2 {
+    padding-bottom: 30px;
+}
+
+.highlight {
+    border-radius: 20px 0px 20px 0px;
+    padding: 5px 10px;
+    background-color: #008000;
+    color: #ffffff;
+    line-height: 70px;
+}
+
+.nav-pills .nav-link {
+    width: 50px;
+    height: 50px;
+    margin: 5px 40px;
+    font-weight: 700;
+    padding: 0px;
+    color: #ffffff;
+    border: 2px solid;
+    background-color: #fcfcfc52;
+}
+
+.nav-pills .nav-item span {
+    font-size: 12px;
+}
+
+.nav-pills .nav-link.active, 
+.nav-pills .show>.nav-link {
+    background-color: green;
+}
+
+#sell_your_scrap .card {
+    border: none;
+    background-color: #fdc415;
+    box-shadow: 0px 2px 15px rgba(0,0,0,0.2);
+    background-image: url('../img/hero-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#How_it_work {
+    padding: 100px 0px;
+}
+
+#How_it_work .card {
+    position: relative;
+    max-width : 300px;
+    height : 240px;  
+    background-color : #FDCE3D;
+    margin : 30px 10px;
+    padding : 20px 15px;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+    transition : 0.3s ease-in-out;
+    border-radius : 15px;
+}
+#How_it_work .card:hover {
+    height : 320px;    
+}
+
+
+#How_it_work .card .image {
+    position : relative;
+    width : 220px;
+    height : 220px;
+    top : -50%;
+    margin: 0 auto;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+    z-index : 1;
+}
+
+#How_it_work .card .image img {
+    max-width : 100%;
+    border-radius : 15px;
+}
+
+#How_it_work .card .content {
+    position : relative;
+    top : -25%;
+    padding : 10px 15px;
+    color : #111;
+    text-align : center;
+    visibility : hidden;
+    opacity : 0;
+    transition : 0.3s ease-in-out;
+    
+}
+
+#How_it_work .card:hover .content {
+    margin-top : 10px;
+    visibility : visible;
+    opacity : 1;
+    transition-delay: 0.2s;
+
+}
+
+#how-it-card {
+    padding: 120px 0px 20px;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 45px;
+    width: 45px;
+    margin: 0 20px;
+    border: 2px solid #ffffff;
+    background-color: #198754;
+    color: #ffffff;
+    display: inline-block;
+    opacity: 0.5;
+    position: relative;
+}
+
+.step::after {
+    position: absolute;
+    content: '';
+    width: 40px;
+    border: 1px solid #008000;
+    right: -42px;
+    opacity: 0.3;
+}
+
+.step:last-child::after {
+    position: absolute;
+    content: none;
+}
+
+.step.active::after {
+    opacity: 1;
+}
+
+/* Mark the active step: */
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #04AA6D;
+}
+
+.fs-12 {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+#about_us {
+    padding: 80px 0;
+}
+
+#about_us .card {
+    background-color: #008000;
+    border-radius: 20px;
+    padding: 40px;
+    position: relative;
+}
+
+#about_us .card::before {
+    position: absolute;
+    content: '';
+    width: 300px;
+    height: 160px;
+    background: url(../img/leaves.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+#about_us .card::after {
+    position: absolute;
+    content: '';
+    width: 300px;
+    height: 160px;
+    background: url(../img/leaves.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+#about_us .card .about-img {
+    width: 400px;
+    margin: 0 auto;
+}
+
+#about_us .card p {
+    text-align: justify;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.highlight-border {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    width: fit-content;
+}
+
+.highlight-border::before {
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 5px;
+    background-color: #34f134;
+}
+
+.ag-courses-item_link {
+    display: block;
+    padding: 30px 20px;
+    background-color: #008000;
+    overflow: hidden;
+    position: relative;
+}
+
+.ag-courses-item_link:hover, 
+.ag-courses-item_link:hover .ag-courses-item_title {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.ag-courses-item_bg {
+    height: 128px;
+    width: 128px;
+    background-image: url(../img/hero-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+    border-radius: 50%;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.ag-courses-item_link:hover .ag-courses-item_bg {
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10);
+    transform: scale(10);
+}
+
+.ag-courses-item_link img {
+    z-index: 2;
+    position: relative;
+    max-width: 100px;
+}
+
+.ag-courses-item_title {
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 28px;
+    color: #FFF;
+    z-index: 2;
+    position: relative;
+}
+
+#why_us {
+    padding: 50px 0px 100px;
+}
+
+#contact_us {
+    padding: 100px 0px;
+    /* background-color: #FEEDB7; */
+}
+
+.form-control {
+    border-color: #ffbf00;
+}
+
+.form-control::placeholder {
+    color: #af9750;
+}
+
+.form-control:focus {
+    color: #af9750;
+    border-color: #ffbf00;
+    outline: 0;
+    box-shadow: none;
+}
+
+#footer h5 {
+    color: #008000;
+}
+
+#footer {
+    padding: 60px 0px 0px;
+    background-color: #FEEDB7;
+}
+
+#footer a,p,i {
+    color: #212529;
+}
+
+#footer i:hover {
+    color: #008000;
+}
+
+.cta-plus {
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+#cta-area {
+    display: none;
+}
+
+
+/* =================================
+    Responsive Design
+   =================================
+*/
+
+/* Max Width 1024px */
+
+@media (max-width:1024px) {
+    #hero_section {
+        padding: 80px 0;
+    }
+
+    #sell_your_scrap {
+        padding: 40px 0;
+    }
+
+    #hero_section h1 {
+        font-size: 32px;
+        line-height: 44px;  
+    }
+    
+    #hero_section .yellow-card {
+        padding: 20px 40px;
+    }
+    .play-btn img {
+        width: 160px;
+    }
+    .sub-title {
+        font-size: 16px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+    #about_us .card::before {
+        width: 200px;
+        height: 150px;
+    }
+    #about_us .card::after {
+        width: 200px;
+        height: 150px;
+    }
+
+    .ag-courses-item_title {
+        font-size: 22px;
+    }
+}
+
+/* Max Width 768px */
+
+@media (max-width:768px) {
+    #hero_section {
+        padding: 80px 0;
+    }
+
+    #hero_section h1 {
+        font-size: 24px;
+        line-height: 34px;  
+    }
+    
+    #hero_section .yellow-card {
+        padding: 40px;
+    }
+
+    .play-btn img {
+        width: 120px;
+    }
+    #about_us .card .about-img {
+        width: 300px;
+        margin: 0 auto;
+    }
+    #about_us .card::before,
+    #about_us .card::after {
+        content: none;
+    }
+    #How_it_work .card {
+        max-width: 240px;
+        height: 220px;
+    }
+    #How_it_work .card .image {
+        width: 180px;
+        height: 180px;
+    }
+    .ag-courses-item_title {
+        font-size: 16px;
+    }
+    #footer {
+        padding: 30px 0px 0px;
+        background-color: #FEEDB7;
+    }
+}
+
+/* Max Width 425px */
+
+@media (max-width:425px) {
+
+    #hero_section .yellow-card {
+        background-size: cover;
+        background-position: left;
+        padding: 30px;
+    }
+
+    #hero_section h1 {
+        font-size: 22px;
+        line-height: 34px;
+    }
+
+    #about_us .card {
+        padding: 20px;
+    }
+
+    #about_us .card .about-img {
+        width: 230px;
+    }
+
+    .highlight-border {
+        margin: 10px auto;
+    }
+
+    .step {
+        height: 40px;
+        width: 40px;
+        margin: 0px 10px;
+    }
+
+    .step::after {
+        width: 20px;
+        right: -22px;
+    }
+
+    .cta-btn {
+        width: 40px;
+        height: 40px;
+        right: 10px;
+    }
+
+    .cta-btn.call {
+        bottom: 120px;
+        font-size: 18px;
+    }
+
+    .cta-btn.whatsapp {
+        bottom: 70px;
+        font-size: 24px;
+    }
+
+    #How_it_work .card {
+        height: 290px;
+    }
+
+    #How_it_work .card:hover {
+        height: 380px;
+    }
+
+    #How_it_work .card .image {
+        top: 0px;
+    }
+
+    #How_it_work .card .content {
+        padding: 10px 5px;
+        top: 15%;
+    }
+
+    #how-it-card {
+        padding: 20px 0px;
+    }
+
+    .ag-courses-item_link {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    #why_us {
+        padding: 0px 0px 50px;
+    }
+
+    #How_it_work {
+        padding: 50px 0px;
+    }
+
+    #about_us {
+        padding: 50px 0;
+    }
+
+    #footer {
+        padding: 30px 0px 0px;
+    }
+
+}
