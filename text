@@ -1,0 +1,63 @@
+<section id="our-other-dealers">
+    <div class="container">
+        <h2 class="text-center">Welcome to The Bhangarwala <br><span class="highlight">Our Other Dealers</span></h2>
+
+        <!-- Search Bar -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-6">
+                <input type="text" id="dealerSearch" class="form-control" placeholder="Search by name, address, location, or city">
+            </div>
+        </div>
+
+        <div class="row align-items-center justify-content-center" id="dealer-list">
+            <div class="col-md-4 mb-3 text-center dealer-card">
+                <div class="card d-flex flex-column mx-auto">
+                    <div class="image rounded rounded-4">
+                        <img src="https://thebhangarwala.in/assets/front/img/schedule-pickup.png" class="img-fluid mb-3">
+                        <h4>Shaikh Sohel</h4>
+                    </div>
+                    <div class="content">
+                        <p>Address: Parbhani, Maharashtra</p>
+                        <p>City: Parbhani</p>
+                    </div>
+                </div>   
+            </div>
+            <div class="col-md-4 mb-3 text-center dealer-card">
+                <div class="card d-flex flex-column mx-auto">
+                    <div class="image rounded rounded-4">
+                        <img src="https://thebhangarwala.in/assets/front/img/Pickup-Guy-at-Doorstep.png" class="img-fluid mb-3">
+                        <h4>Shabnam Pathan</h4>
+                    </div>
+                    <div class="content">
+                        <p>Address: Jalna, Maharashtra</p>
+                        <p>City: Jalna</p>
+                    </div>
+                </div>   
+            </div>
+            <div class="col-md-4 mb-3 text-center dealer-card">
+                <div class="card d-flex flex-column mx-auto">
+                    <div class="image rounded rounded-4">
+                        <img src="https://thebhangarwala.in/assets/front/img/get-paid.png" class="img-fluid mb-3">
+                        <h4>Nasrulla Shaikh</h4>
+                    </div>
+                    <div class="content">
+                        <p>Address: Aurangabad, Maharashtra</p>
+                        <p>City: Aurangabad</p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+document.getElementById("dealerSearch").addEventListener("keyup", function() {
+    let searchValue = this.value.toLowerCase();
+    let dealers = document.querySelectorAll(".dealer-card");
+
+    dealers.forEach(function(dealer) {
+        let text = dealer.textContent.toLowerCase();
+        dealer.style.display = text.includes(searchValue) ? "block" : "none";
+    });
+});
+</script>
